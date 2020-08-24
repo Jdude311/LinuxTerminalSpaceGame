@@ -1,4 +1,4 @@
-//This file, when compiled with GCC, must use the "-lncurses" option to compile correctly. Example: gcc -lncurses space2PlayerGame.c -o space2PlayerGame.out
+//This file, when compiled with GCC, must use the "-lncurses" and the "-fopenmp" options to compile correctly. Example: gcc -fopenmp -lncurses space2PlayerGame.c -o space2PlayerGame.out
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -6,6 +6,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <locale.h>
+#include <omp.h>
 
 //Define objects' sprites? so they can be used later
 #define asteroidChar "#"
